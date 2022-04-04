@@ -7,7 +7,7 @@
     <body class="form-page__body">
         <header class="main-header">
             <div class="header">
-              <a class="header__logo">
+              <a class="header__logo" href="index.html">
                 <img src="img/main-logo.svg" width="74" height="23" alt="PINK">
               </a>
               <button class="header__toggle" type="button">
@@ -16,23 +16,23 @@
             <nav class="main-nav">
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                  <li class="site-list__item site-list__item--active">
+                  <li class="site-list__item ">
                     <a href="index.html">
                     Главная
                     </a>
                   </li>
                   <li class="site-list__item">
-                    <a href="#">
+                    <a href="catalog.html">
                     Фотографии
                     </a>
                   </li>
-                  <li class="site-list__item">
-                    <a href="#">
+                  <li class="site-list__item site-list__item--active">
+                    <a href="form.html">
                     Конкурс
                     </a>
                   </li>
                   <li class="site-list__item">
-                    <a href="#">
+                    <a href="https://htmlacademy.ru/">
                     HTML ACADEMY
                     </a>
                   </li>
@@ -41,112 +41,85 @@
             </nav>
           </header>
           <main class="main-content">
-              <h1 class="main-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-              <h2 class="main-content__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+              <section class="page-information">
+                <h1 class="page-information__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+              </section>
               <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+                <h2 class="main-content__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
                   <div class="form__wrapper">
                     <div class="form__name-wrapper">
                         <label class="form__info" for="user-surname">Фамилия:</label>
-                        <input class="form__name" type="text" id="user-surname" placeholder="Укажите фамилию" name="surname">   
+                        <input class="form__name" type="text" id="user-surname" placeholder="Укажите фамилию" name="surname" required>   
                     </div>
                     <div class="form__name-wrapper">
                         <label class="form__nfo" for="user-surname">Имя:</label>
-                        <input class="form__name" type="text" id="user-name" placeholder="Введите ваше имя" name="name">   
+                        <input class="form__name" type="text" id="user-name" placeholder="Введите ваше имя" name="name" required>   
                     </div>
                     <div class="form__name-wrapper">
                         <label class="form__info" for="user-patronymic">Отчество:</label>
                         <input class="form__name" type="text" id="user-patronymic" placeholder="Ну и отчество тоже" name="patronymic">   
                     </div>
                   </div>
-                  <div class="form__achievement-wrapper">
+                  <div class="form__wrapper form-wrapper--styled">
                       <h3 class="form__info">Ваши безбашенные достижения в путешествии</h3>
                       <ul class="form__list">
                           <li class="form__item">
-                            <label class="form__control" for="shark">
                                 <input class="visually-hidden form__input" type="checkbox" name="shark" id="shark" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Сделал селфи с акулой</span>
-                            </label>
+                                <label class="form__control" for="shark">Сделал селфи с акулой</label>
                           </li>
                           <li class="form__item">
-                            <label class="form__control" for="beach">
                                 <input class="visually-hidden form__input" type="checkbox" name="beach" id="beach" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Обгорел на пляже</span>
-                            </label>
+                                <label class="form__control" for="beach">Обгорел на пляже</label>
                           </li>
                           <li class="form__item">
-                            <label class="form__control" for="Chak">
                                 <input class="visually-hidden form__input" type="checkbox" name="Chak" id="Chak">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Видел Чака Норриса</span>
-                            </label>
+                                <label class="form__control" for="Chak">Видел Чака Норриса</label>
                           </li>
                           <li class="form__item">
-                            <label class="form__control" for="souvenir">
                                 <input class="visually-hidden form__input" type="checkbox" name="souvenir" id="souvenir">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Накупил сувениров</span>
-                            </label>
+                                <label class="form__control" for="souvenir">Накупил сувениров</label>
                           </li>
                           <li class="form__item">
-                            <label class="form__control" for="tower">
                                 <input class="visually-hidden form__input" type="checkbox" name="tower" id="tower" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Удержал башню</span>
-                            </label>
+                                <label class="form__control" for="tower">Удержал башню</label>
                           </li>
                           <li class="form__item">
-                            <label class="form__control" for="hotel">
                                 <input class="visually-hidden form__input" type="checkbox" name="hotel" id="hotel" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Разгромил отель</span>
-                            </label>
+                                <label class="form__control" for="hotel">Разгромил отель</label>
                           </li>
                       </ul>
                   </div>
-                  <div class="form__contacts-wrapper">
+                  <div class="form__wrapper">
                     <div class="form__name-wrapper">
                         <label class="form__info" for="phone">Номер телефона:</label>
                         <input class="form__name" type="text" id="user-surname" placeholder="Номер, пожалуйста" name="phone">   
                     </div>
                     <div class="form__name-wrapper">
                         <label class="form__info" for="email">Адрес почты:</label>
-                        <input class="form__name" type="text" id="email" placeholder="Введите почту" name="phone">   
+                        <input class="form__name" type="text" id="email" placeholder="Введите почту" name="phone" required>   
                     </div>
                   </div>
-                  <div class="form__application-wrapper">
+                  <div class="form__wrapper form__wrapper--styled">
                     <h3 class="form__info">С каким приложением путешествовали?</h3>
                     <ul class="form__list">
                         <li class="form__item">
-                           <label class="control" for="IOS">
                                 <input class="visually-hidden form__input" type="radio" name="IOS" id="IOS" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Pink для iOS</span>
-                           </label>
+                                <label class="control" for="IOS">Pink для iOS</label>
                         </li>
-                        <li class="form__item">
-                                <label class="control" for="Android">
+                        <li class="form__item"> 
                                 <input class="visually-hidden form__input" type="radio" name="Android" id="Android">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Pink на Android</span>
-                            </label>
+                                <label class="control" for="Android">Pink на Android</label>
                          </li>
                          <li class="form__item">
-                            <label class="control" for="Windows">
                                 <input class="visually-hidden form__input" type="radio" name="Windows" id="Windows">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Windows Phone</span>
-                            </label>
+                                <label class="control" for="Windows">Windows Phone</label>
                          </li>
                   </div>
-                  <div class="form__description">
+                  <div class="form__wrapper">
                     <label class="form__info" for="description">Опишите свои эмоции</label>
                     <input class="form__name" type="text" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях" name="description">
                   </div>
-                  <div class="form__button-wrapper">
                     <button class="form__button" type="submit">Отправить форму</button>
-                  </div>
                   <span class="form__additional-info">* — обязательные поля</span>
               </form>
           </main>
