@@ -2,17 +2,17 @@
 display: flex;
 justify-content: center;
 }
- .upload__post{
-   font-size: 18px;
-   line-height: 18px;
-   font-weight: 700;
-   color:$primary-color;
-   border: 3px solid $primary-color;
+.upload__post{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color:$primary-color;
+  border: 3px solid $primary-color;
   box-sizing: border-box;
   border-radius: 30px;
- }
+}
 
- .upload__cancel{
+.upload__cancel{
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -21,4 +21,4 @@ justify-content: center;
   border: 3px solid #283645;
   box-sizing: border-box;
   border-radius: 30px;
- }
+}
