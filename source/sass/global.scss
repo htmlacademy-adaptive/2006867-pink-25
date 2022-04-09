@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 html{
   width: 100%;
 	height: 100%;
@@ -14,4 +12,16 @@ body{
   font-family: "Open Sans", "Arial", sans-serif;
 	font-size: $font;
   color: $text-color;
+  line-height: $line-height;
+}
+
+.visually-hidden{
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }

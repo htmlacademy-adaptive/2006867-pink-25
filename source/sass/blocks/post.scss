@@ -1,0 +1,37 @@
+.post__item{
+  margin:0 auto;
+
+}
+.post__lynk{
+  text-decoration: none;
+ display: flex;
+ justify-content: center;
+}
+.post__mark{
+  background-color: #D22856;
+  width: 140px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.post__wrapper-color{
+margin: 0 auto;
+  background-color: #F2F2F2;
+  width: 280px;
+}
+.post__owner{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.post__time{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.post__description{
+  font-weight: 400;
+  line-height: 24px;
+
+}
