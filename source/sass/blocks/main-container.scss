@@ -1,0 +1,19 @@
+.main-container__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  position: absolute;
+  top: 60px;
+  left: 600px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/phone.png");
+  background-size: 320px 286px;
+}
