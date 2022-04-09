@@ -1,26 +1,25 @@
 
-.reviews__list{
-  margin:0;
-  padding:0;
-
-}
-
-.reviews__item{
+.reviews__list {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
-.reviews__author-name{
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__author-name {
   display: flex;
   justify-content: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color:#000000;
+  color: #000000;
 }
 
-.reviews__text{
+.reviews__text {
   text-align: center;
   line-height: 30px;
-  font-weight: 400;;
+  font-weight: 400;
 }
