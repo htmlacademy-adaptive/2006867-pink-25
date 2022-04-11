@@ -1,5 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 100%;
+  background: #726161;
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    background-color: #000000;
+    align-items: center;
+  }
+
+  .header__toggle {
+    display: none;
+  }
 }

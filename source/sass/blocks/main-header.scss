@@ -1,4 +1,16 @@
 .main-header {
-  width: 320px;
+  box-sizing: border-box;
+  width: 100%;
   height: 462px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 110px;
+    background-color: #000000;
+  }
 }

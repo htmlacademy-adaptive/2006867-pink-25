@@ -1,5 +1,8 @@
 .social {
-  width: 180px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 130px;
   text-align: center;
   margin: 0 auto;
 }
@@ -9,5 +12,18 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .social__list {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+  }
 }

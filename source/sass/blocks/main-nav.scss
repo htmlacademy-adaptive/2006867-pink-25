@@ -1,5 +1,18 @@
 .main-nav {
   padding: 0;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }
