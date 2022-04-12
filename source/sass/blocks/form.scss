@@ -54,3 +54,41 @@
 .form__additional-info {
   text-transform: uppercase;
 }
+
+.form__wrapper--styled {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .form__name-wrapper {
+    flex-direction: row;
+  }
+
+  .form__wrapper--styled {
+    background-color: #ffffff;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__wrapper:nth-child(1) {
+    order: 1;
+  }
+
+  .form__wrapper:nth-child(2) {
+    order: 4;
+  }
+
+  .form__wrapper:nth-child(3) {
+    order: 3;
+  }
+  .form__wrapper:nth-child(4) {
+    order: 2;
+  }
+
+  .form__wrapper:nth-child(5) {
+    order: 5;
+  }
+}

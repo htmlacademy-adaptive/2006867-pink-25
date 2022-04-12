@@ -7,3 +7,33 @@
   align-items: center;
   margin: 0 auto;
 }
+
+.settings__range {
+  display: none;
+}
+
+.settings__range--active {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .settings {
+    width: 100%;
+  }
+
+  .settings__range {
+    display: block;
+  }
+
+  .settings__list {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+
+  .settings__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
