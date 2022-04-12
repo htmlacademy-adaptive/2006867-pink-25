@@ -1,9 +1,11 @@
 .site-list {
+  width: 50%;
   position: relative;
   background-color: #283645;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
+  display: none;
 }
 
 .site-list__item {

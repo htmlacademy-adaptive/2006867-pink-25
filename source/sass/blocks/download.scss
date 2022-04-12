@@ -1,5 +1,6 @@
 .download {
   background-color: #1d2631;
+  z-index: 1;
 }
 
 .download__application {
@@ -37,4 +38,22 @@
   font-weight: 300;
   line-height: 24px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    background-color: transparent;
+    width: 50%;
+    position: absolute;
+    top: -300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    background-color: transparent;
+    width: 50%;
+    position: absolute;
+    top: 100px;
+  }
 }

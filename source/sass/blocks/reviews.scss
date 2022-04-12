@@ -23,3 +23,11 @@
   line-height: 30px;
   font-weight: 400;
 }
+
+.reviews__item:nth-child(2) {
+  display: none;
+}
+
+.reviews__item:nth-child(3) {
+  display: none;
+}
