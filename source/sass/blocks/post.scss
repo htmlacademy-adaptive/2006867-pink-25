@@ -9,11 +9,16 @@
 }
 
 .post__mark {
-  background-color: #d22856;
+  background-color: $primary-color;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 50%;
   width: 140px;
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
+  color: #ffffff;
 }
 
 .post__wrapper-color {
@@ -37,4 +42,8 @@
 .post__description {
   font-weight: 400;
   line-height: 24px;
+}
+
+.post__wrapper {
+  position: relative;
 }

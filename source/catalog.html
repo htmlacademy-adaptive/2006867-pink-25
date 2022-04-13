@@ -2,10 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__catalog-body">
     <header class="main-header">
       <div class="header">
         <a class="header__logo" href="index.html">
@@ -53,7 +54,7 @@
             <li class="photo__item photo__item--special post">
               <div class="post__wrapper">
                 <a class="post__lynk" href="#">
-                  <img src="img/panorama-tablet.jpg" width="320" height="137" alt="Панорама дня.">
+                  <img src="img/panorama-tablet.jpg" width="100%" height="10%" alt="Панорама дня.">
                 </a>
               <div class="post__mark">Панорама дня</div>
               <div class="post__wrapper-color">
@@ -182,7 +183,7 @@
                 </button>
                 <div class="settings__range settings__range--active">
                   <div class="settings__range-scale">
-                    <div class="settings__range_-bar">
+                    <div class="settings__range-bar">
                         <button class="range-toggle" type="button">
                         <span class="visually-hidden">Изменить значение.</span>
                         </button>
@@ -229,8 +230,10 @@
               </div>
               </li>
             </ul>
-            <a class="upload__post button">Запостить</a>
-            <a class="upload__cancel button">Отмена</a>
+            <div class="upload__botton-wrapper">
+              <a class="upload__post button">Запостить</a>
+              <a class="upload__post upload__post--cancel button">Отмена</a>
+            </div>
           </div>
         </div>
       </section>
