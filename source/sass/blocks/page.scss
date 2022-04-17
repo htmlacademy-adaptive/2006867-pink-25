@@ -1,7 +1,9 @@
 .page__body {
+  width: 320px;
+  margin: 0 auto;
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 20%;
+  background-size: 320px 462px;
 }
 
 .page__catalog-body {
@@ -14,4 +16,18 @@
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 660px;
+    background-size: 660px 729px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+    background-size: 1200px 853px;
+  }
 }

@@ -1,11 +1,10 @@
 .site-list {
-  width: 50%;
   position: relative;
   background-color: #283645;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style-type: none;
-  display: block;
+  display: none;
 }
 
 .site-list__item {
@@ -14,12 +13,14 @@
   align-items: center;
 
   a {
-    z-index: 2;
+    z-index: 4;
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     line-height: 32px;
     font-weight: 700;
+    border-top: 1px solid #886e5b;
+    border-bottom: 1px solid #71543f;
   }
 }
 

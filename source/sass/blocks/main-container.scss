@@ -1,28 +1,50 @@
 .main-container {
-  position: relative;
   background-image: url("../../img/phone.png");
   background-repeat: no-repeat;
-  background-position: right 20px top -70px;
+  background-size: 320px 286px;
+  background-position: right -20px top 80px;
 }
 
 .main-container__title {
-  margin: 0;
+  margin-top: 29px;
   font-size: 24px;
   font-weight: 300;
-  top: -400px;
-  left: 20%;
-  position: absolute;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 300px;
+  text-align: center;
 }
 
-// .main-container__title::after {
-//   content: "";
-//   position: absolute;
-//   background-image: url("../img/phone.png");
-//   background-size: 320px 286px;
-//   left: 600px;
-//   top: 100px;
-// }
+@media (min-width: $tablet-width) {
+  .main-container {
+    background-size: 660px 545px;
+    background-position: right -110px top 44px;
+  }
+
+  .main-container__title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    width: 300px;
+    height: 127px;
+    margin-bottom: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container {
+    background-position: right -80px top 170px;
+  }
+
+  .main-container__title {
+    margin-left: 150px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    width: 300px;
+    height: 127px;
+    margin-bottom: 600px;
+  }
+}

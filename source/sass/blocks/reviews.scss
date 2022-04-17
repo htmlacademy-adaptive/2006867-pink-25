@@ -5,8 +5,14 @@
 }
 
 .reviews__item {
+  display: none;
   margin: 0;
   padding: 0;
+}
+
+.reviews__item--active {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .reviews__author-name {
@@ -30,4 +36,52 @@
 
 .reviews__item:nth-child(3) {
   display: none;
+}
+
+.reviews__description {
+  font-size: 14px;
+  display: none;
+}
+
+.reviews__wrapper {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__description {
+    display: block;
+    text-align: center;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+
+  .reviews__item--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__item--active {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .reviews__list::before {
+    content: "";
+    background-image: url("../../img/quotes.png");
+    width: 79px;
+    height: 63px;
+    top: -50px;
+    left: 600px;
+    z-index: 3;
+    position: absolute;
+  }
 }
