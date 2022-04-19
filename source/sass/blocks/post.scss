@@ -19,12 +19,15 @@
   font-weight: 700;
   line-height: 24px;
   color: #ffffff;
+  text-align: center;
 }
 
 .post__wrapper-color {
   margin: 0 auto;
   background-color: #f2f2f2;
   width: 280px;
+  box-sizing: border-box;
+  padding: 25px 10px 26px 17px;
 }
 
 .post__owner {
@@ -46,4 +49,14 @@
 
 .post__wrapper {
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .post__wrapper-color--special{
+    width: 620px;
+  }
+
+  .post__mark {
+
+  }
 }

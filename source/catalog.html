@@ -12,7 +12,7 @@
         <a class="header__logo" href="index.html">
           <img src="img/main-logo.svg" width="74" height="23" alt="PINK">
         </a>
-        <button class="header__toggle" type="button">
+        <button class="header__toggle header__toggle--closed-menu" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -54,10 +54,10 @@
             <li class="photo__item photo__item--special post">
               <div class="post__wrapper">
                 <a class="post__lynk" href="#">
-                  <img src="img/panorama-tablet.jpg" width="100%" height="10%" alt="Панорама дня.">
+                  <img src="img/panorama-tablet.jpg" width="100%" height="137" alt="Панорама дня.">
                 </a>
               <div class="post__mark">Панорама дня</div>
-              <div class="post__wrapper-color">
+              <div class="post__wrapper-color post__wrapper-color--special">
                 <span class="post__owner">Анна</span>
               <span class="post__time">(5 минут назад)</span>
               <p class="post__description">Прыгать или нет? Напишите вкомментарии свой совет исмотрите прямую трансляцию вперископе, задавайте свои вопросы!</p>
@@ -184,9 +184,9 @@
                 <div class="settings__range settings__range--active">
                   <div class="settings__range-scale">
                     <div class="settings__range-bar">
-                        <button class="range-toggle" type="button">
-                        <span class="visually-hidden">Изменить значение.</span>
-                        </button>
+                        <input class="range-toggle" type="text">
+                          <span class="visually-hidden">Изменить значение.</span>
+                        </input>
                   </div>
                 </div>
               </div>
@@ -230,9 +230,9 @@
               </div>
               </li>
             </ul>
-            <div class="upload__botton-wrapper">
-              <a class="upload__post button">Запостить</a>
-              <a class="upload__post upload__post--cancel button">Отмена</a>
+            <div class="upload__button-wrapper">
+              <a class="upload__post">Запостить</a>
+              <a class="upload__post upload__post--cancel">Отмена</a>
             </div>
           </div>
         </div>

@@ -9,13 +9,13 @@
 .page__catalog-body {
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: 320px 237px;
 }
 
 .page__form-body {
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 50%;
+  background-size: 320px 237px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,11 +23,21 @@
     width: 660px;
     background-size: 660px 729px;
   }
+
+  .page__catalog-body {
+    width: 660px;
+    background-size: 660px 440px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page__body {
     width: 1200px;
     background-size: 1200px 853px;
+  }
+
+  .page__catalog-body {
+    width: 1200px;
+    background-size: 1200px 394px;
   }
 }

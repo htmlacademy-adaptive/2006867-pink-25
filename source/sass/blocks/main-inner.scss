@@ -3,4 +3,16 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  margin-top: 150px;
+}
+
+.main-inner__subtitle:nth-child(1) {
+  margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-inner__subtitle {
+    font-size: 18px;
+    margin-top: 250px;
+  }
 }

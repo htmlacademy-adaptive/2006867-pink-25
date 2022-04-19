@@ -1,5 +1,6 @@
 .site-list {
   position: relative;
+  width: 320px;
   background-color: #283645;
   margin: 0;
   padding: 0;
@@ -13,14 +14,17 @@
   align-items: center;
 
   a {
+    width: 320px;
+    height: 63px;
     z-index: 4;
     color: #ffffff;
+    text-align: center;
     text-decoration: none;
     font-size: 18px;
     line-height: 32px;
     font-weight: 700;
-    border-top: 1px solid #886e5b;
-    border-bottom: 1px solid #71543f;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
   }
 }
 
@@ -33,7 +37,12 @@
   }
 
   .site-list__item a {
+    width: auto;
     line-height: 18px;
     font-weight: 400;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
   }
 }

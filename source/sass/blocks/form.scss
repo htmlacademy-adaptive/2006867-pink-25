@@ -1,16 +1,13 @@
-.form {
-  width: 90%;
-}
-
 .form__subtitle {
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  margin-top: 100px;
 }
 
 .form__name-wrapper {
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
 
@@ -24,17 +21,20 @@
   color: $primary-color;
   line-height: 30px;
   font-weight: 400;
-  text-align: center;
+  text-align: start;
 }
 
 .form__name {
   font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
-  width: 60%;
+  width: 276px;
+  box-sizing: border-box;
+  padding: 23px 20px 23px 20px;
 }
 
 .form__name::placeholder {
+  color: #283645;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -71,6 +71,73 @@
 
 .form__wrapper--styled {
   background-color: #e5e5e5;
+}
+
+.form__wrapper:nth-child(6) .form__name {
+  height: 197px;
+}
+
+.form__wrapper:nth-child(6) .form__name::placeholder {
+  text-align: start;
+}
+
+.form__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.form__input + label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  // flex-shrink: 0;
+  // flex-grow: 0;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+  border-radius: 1px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form__input:checked + label::before {
+  background-image: url("../../img/tick.png");
+}
+
+.form__input--radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.form__input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.form__input[type="radio"]:checked + label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: $primary-color;
 }
 
 @media (min-width: $tablet-width) {
