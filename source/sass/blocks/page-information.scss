@@ -1,3 +1,9 @@
+.page-information {
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 237px;
+  min-height: 171px;
+}
 
 .page-information__title {
   margin: 0;
@@ -9,8 +15,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-information {
+    background-image: url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 660px 440px;
+    min-height: 330px;
+  }
+
   .page-information__title {
     font-size: 50px;
     line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-information {
+    background-image: url("../../img/back-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 1200px 455px;
+    min-height: 345px;
   }
 }

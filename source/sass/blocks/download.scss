@@ -45,8 +45,8 @@
 @media (min-width: $tablet-width) {
   .download {
     background-color: transparent;
-    position: absolute;
-    top: 265px;
+    width: 60%;
+    text-align: center;
   }
 
   .download__info {
@@ -57,8 +57,5 @@
 @media (min-width: $desktop-width) {
   .download {
     background-color: transparent;
-    width: 50%;
-    position: absolute;
-    top: 350px;
   }
 }

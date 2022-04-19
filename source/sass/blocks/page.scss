@@ -1,32 +1,30 @@
 .page__body {
   width: 320px;
   margin: 0 auto;
-  background-image: url("../../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 462px;
 }
 
 .page__catalog-body {
-  background-image: url("../../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 237px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page__form-body {
-  background-image: url("../../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 237px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page__body {
     width: 660px;
-    background-size: 660px 729px;
   }
 
   .page__catalog-body {
     width: 660px;
     background-size: 660px 440px;
+  }
+
+  .page__form-body {
+    width: 660px;
   }
 }
 

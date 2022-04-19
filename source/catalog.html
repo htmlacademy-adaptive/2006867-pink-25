@@ -54,7 +54,7 @@
             <li class="photo__item photo__item--special post">
               <div class="post__wrapper">
                 <a class="post__lynk" href="#">
-                  <img src="img/panorama-tablet.jpg" width="100%" height="137" alt="Панорама дня.">
+                  <img src="img/panorama-tablet.png" width="100%" height="137" alt="Панорама дня.">
                 </a>
               <div class="post__mark">Панорама дня</div>
               <div class="post__wrapper-color post__wrapper-color--special">
@@ -170,25 +170,26 @@
         </div>
       </section>
       <section class="upload">
-        <h2 class="main-inner__subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
-        <div class="upload__wrapper">
-          <img class="upload__image" src="img/photo-7-tablet.jpg" width="280" height="374" alt="Зимний пейзаж.">
-          <div class="settings">
-            <ul class="settings__list">
-              <li class="settings__item settings__item--crop">
-                <button type="button" class="settings__button">
-                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
-                  </svg>
-                </button>
+        <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="main-inner__subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
+          <div class="upload__wrapper">
+            <img class="upload__image" src="img/photo-7-tablet.jpg" width="280" height="374" alt="Зимний пейзаж.">
+            <div class="settings">
+              <ul class="settings__list">
+                <li class="settings__item settings__item--crop">
+                  <button type="button" class="settings__button">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
+                    </svg>
+                  </button>
                 <div class="settings__range settings__range--active">
                   <div class="settings__range-scale">
                     <div class="settings__range-bar">
-                        <input class="range-toggle" type="text">
+                        <input class="range-toggle" type="range">
                           <span class="visually-hidden">Изменить значение.</span>
                         </input>
+                    </div>
                   </div>
-                </div>
               </div>
               </li>
               <li class="settings__item settings__item--fill">
@@ -203,9 +204,9 @@
                 <div class="settings__range">
                   <div class="settings__range-scale">
                     <div class="settings__range-bar">
-                        <button class="range-toggle" type="button">
-                        <span class="visually-hidden">Изменить значение.</span>
-                        </button>
+                        <input class="range-toggle" type="range">
+                          <span class="visually-hidden">Изменить значение.</span>
+                        </input>
                     </div>
                   </div>
               </div>
@@ -222,20 +223,21 @@
                 <div class="settings__range">
                   <div class="settings__range-scale">
                     <div class="settings__range-bar">
-                        <button class="settings__range-toggle" type="button">
-                        <span class="visually-hidden">Изменить значение.</span>
-                        </button>
+                        <input class="settings__range-toggle" type="range">
+                          <span class="visually-hidden">Изменить значение.</span>
+                        </input>
                     </div>
                   </div>
               </div>
               </li>
             </ul>
             <div class="upload__button-wrapper">
-              <a class="upload__post">Запостить</a>
-              <a class="upload__post upload__post--cancel">Отмена</a>
+              <button class="upload__post" type="submit">Запостить</button>
+              <button class="upload__post upload__post--cancel" type="reset">Отмена</button>
             </div>
           </div>
         </div>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
