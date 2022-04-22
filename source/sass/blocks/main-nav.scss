@@ -2,6 +2,11 @@
   padding: 0;
   width: 100%;
   margin: 0 auto;
+  display: none;
+}
+
+.main-nav--nojs {
+  display: block;
 }
 
 @media (min-width: $desktop-width) {

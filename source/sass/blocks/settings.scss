@@ -12,8 +12,16 @@
   display: none;
 }
 
+.settings__button-wrapper {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  position: relative;
+}
+
 .settings__range--active {
   display: block;
+  position: absolute;
+  left: 30%;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +31,11 @@
 
   .settings__range {
     display: block;
+  }
+
+  .settings__range--active {
+    position: relative;
+    left: 0;
   }
 
   .settings__list {

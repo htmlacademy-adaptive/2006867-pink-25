@@ -1,8 +1,8 @@
 .download {
-  box-sizing: border-box;
-  padding: 28px 20px 38px 20px;
   background-color: #1d2631;
   z-index: 1;
+  box-sizing: border-box;
+  padding: 28px 20px 38px 20px;
 }
 
 .download__application {
@@ -45,8 +45,8 @@
 @media (min-width: $tablet-width) {
   .download {
     background-color: transparent;
-    width: 60%;
     text-align: center;
+    width: 30%;
   }
 
   .download__info {
@@ -57,5 +57,6 @@
 @media (min-width: $desktop-width) {
   .download {
     background-color: transparent;
+
   }
 }

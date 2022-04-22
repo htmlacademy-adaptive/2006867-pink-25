@@ -1,14 +1,20 @@
 .main-header {
   height: 66px;
-  background: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header__no-js {
+  min-height: 325px;
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
     height: 110px;
-    background-color: #000000;
-    opacity: 0.3;
     width: 660px;
+  }
+
+  .main-header__no-js {
+    min-height: 365px;
   }
 }
 
@@ -21,6 +27,5 @@
     grid-template-columns: 1fr 3fr;
     width: 1200px;
     height: 110px;
-    background-color: #000000;
   }
 }

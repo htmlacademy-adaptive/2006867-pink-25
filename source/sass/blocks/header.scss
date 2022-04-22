@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #000000;
+  // background-color: #000000;
   align-items: center;
   height: 66px;
   box-sizing: border-box;
@@ -19,8 +19,8 @@
 }
 
 .header__toggle--closed-menu {
-  // display: block;
-  // z-index: 3;
+  display: block;
+  z-index: 3;
   cursor: pointer;
   border: none;
   width: 50px;
@@ -51,9 +51,9 @@
   transform: rotate(90deg);
 }
 
-// .header__toggle--no-js .header__toggle {
-//   display: block;
-// }
+.header__toggle--no-js {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .header {

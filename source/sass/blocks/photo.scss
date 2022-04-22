@@ -6,6 +6,11 @@
 
 .photo__item {
   margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.photo__item--special {
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {

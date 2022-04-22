@@ -31,11 +31,13 @@
 @media (min-width: $desktop-width) {
   .page__body {
     width: 1200px;
-    background-size: 1200px 853px;
   }
 
   .page__catalog-body {
     width: 1200px;
-    background-size: 1200px 394px;
+  }
+
+  .page__form-body {
+    width: 1200px;
   }
 }
