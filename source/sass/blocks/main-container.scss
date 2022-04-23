@@ -1,22 +1,22 @@
 .main-container__title {
-  margin-top: 66px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 95px;
 }
 
 .main-container__wrapper {
   margin-top: -66px;
   box-sizing: border-box;
-  padding-top: 29px;
   background-image: url("../../img/phone-hand.png"), url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 286px, 320px 462px;
-  background-position: 90% 35%, 0 0;
+  background-position: 90% 40%, 0 0;
   min-height: 733px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,6 @@
     font-weight: 300;
     line-height: 1.2;
     width: 300px;
-    height: 127px;
     text-align: center;
   }
 }

@@ -11,8 +11,8 @@
 }
 
 .slider__toggle--current {
-  background: #ffffff;
-  border: 3px solid #283645;
+  background-color: #ffffff;
+  outline: 3px solid #283645;
 }
 
 .slider__toggles {
@@ -21,4 +21,10 @@
   width: 50px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles:nth-child(2) {
+    display: none;
+  }
 }
