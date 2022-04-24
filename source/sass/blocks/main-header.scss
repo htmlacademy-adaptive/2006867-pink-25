@@ -1,5 +1,5 @@
 .main-header {
-  height: 66px;
+  min-height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -9,7 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    height: 110px;
+    min-height: 110px;
     width: 660px;
   }
 
@@ -26,6 +26,6 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 1200px;
-    height: 110px;
+    min-height: 110px;
   }
 }

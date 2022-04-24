@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
   }
 
   .site-list__item a {

@@ -37,23 +37,6 @@
   margin: 0 auto;
 }
 
-.advantages__color-wrapper {
-  background-color: #f2f2f2;
-  position: relative;
-  padding-top: 30px;
-}
-
-.advantages__color-wrapper::before {
-  content: "";
-  background-color: #ffffff;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  clip-path: polygon(0 100%, 0 0, 100% 0);
-}
-
 .advantages__decor-image {
   display: none;
 }
@@ -73,7 +56,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__color-wrapper {
+  .advantages__list-wrapper {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -130,12 +113,14 @@
 @media (min-width: $desktop-width) {
   .advantages__block-title {
     line-height: 30px;
+    width: auto;
   }
 
   .advantages__list {
-    width: 812px;
+    width: 940px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .advantages__decor-image {
@@ -143,6 +128,7 @@
     height: 382px;
     display: block;
     margin: 0 auto;
+    position: relative;
   }
 
   .advantages__decor-image--special {
@@ -153,27 +139,50 @@
     width: 780px;
     margin: 0 auto;
     font-size: 50px;
+    line-height: 68px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  .advantages__title:nth-child(1) br {
+    display: none;
+  }
+
   .advantages__subtitle {
+    position: absolute;
     box-sizing: border-box;
-    padding: 59px 30px 20px 30px;
+    padding: 59px 30px 20px 0;
     font-size: 30px;
+    margin: 0 auto;
     margin-top: -100px;
     z-index: 5;
     background-color: #f2f2f2;
-    width: auto;
+    width: 300px;
+    text-align: center;
   }
 
   .advantages__description {
     font-size: 18px;
-    width: 308px;
+    text-align: center;
+    width: 252px;
+    margin: 0 auto;
+    margin-top: 36px;
   }
 
   .advantages__lync {
     font-size: 18px;
+  }
+
+  .advantages__block {
+    background-color: #f2f2f2;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .advantages__block-wrapper .advantages__description {
+    text-align: left;
+    width: 534px;
+    margin-bottom: 47px;
   }
 }

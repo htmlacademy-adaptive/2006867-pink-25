@@ -47,7 +47,7 @@
   box-sizing: border-box;
   padding: 50px 20px 60px 20px;
   position: relative;
-  margin-top: -44px;
+  margin-top: -104px;
   z-index: 3;
   background-color: #ffffff;
   width: 320px;
@@ -96,7 +96,7 @@
     background-image: url("../../img/quotes.png");
     width: 79px;
     height: 63px;
-    top: -50px;
+    top: 0;
     left: 50%;
     z-index: 3;
     position: absolute;
@@ -115,6 +115,7 @@
 
   .reviews__wrapper {
     width: 940px;
-    margin-top: 0;
+    margin-top: 72px;
+    padding-top: 0;
   }
 }

@@ -1,9 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  // background-color: #000000;
   align-items: center;
-  height: 66px;
+  min-height: 66px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
@@ -57,7 +56,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    height: 110px;
+    min-height: 110px;
   }
 }
 

@@ -1,8 +1,13 @@
+.contacts {
+  padding-top: 47px;
+}
+
 .contacts__wrapper {
   box-sizing: border-box;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 .contacts__title {
@@ -78,7 +83,16 @@
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contacts__item:nth-child(3) {
+    order: 1;
   }
 
   .contacts iframe {
@@ -87,5 +101,11 @@
 
   .contacts__map::before {
     height: 103px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 61px;
   }
 }

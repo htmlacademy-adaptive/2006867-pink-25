@@ -1,0 +1,24 @@
+.color-wrapper {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 49px;
+}
+
+.color-wrapper::before {
+  content: "";
+  background-color: #ffffff;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+}
+
+@media (min-width: $tablet-width) {
+  .color-wrapper {
+    padding-bottom: 0;
+  }
+}
