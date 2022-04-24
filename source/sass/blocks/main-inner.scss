@@ -4,3 +4,13 @@
   font-weight: 400;
   text-align: center;
 }
+
+.main-inner__subtitle:nth-child(1) {
+  margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-inner__subtitle {
+    font-size: 18px;
+  }
+}

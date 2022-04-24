@@ -1,7 +1,18 @@
-.service__name {
-  background-color: #283645;
-  border: 2px solid #283645;
-  border-radius: 1 0 0 0;
+.service__wrapper {
+  width: 320px;
+  overflow-x: scroll;
+  margin-bottom: 45px;
+}
+
+.service__list {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 1104px;
+  background-color: #ffffff;
+}
+
+.service__empty {
+  background-color: #f2f2f2;
 }
 
 .service__title {
@@ -10,20 +21,120 @@
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  background-color: #283645;
+  width: 276px;
+  height: 94px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.service__title:nth-child(2) {
+  border-right: 2px solid #f2f2f2;
+}
+
+.service__title:nth-child(3) {
+  background-color: #283645;
+  border-right: 2px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
 }
 
 .service__price {
   display: flex;
   justify-content: center;
   color: #ffffff;
+  background-color: #283645;
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
 }
 
 .service__item {
+  box-sizing: border-box;
+  padding-left: 20px;
+  display: inline-block;
   text-align: center;
   line-height: 30px;
   font-weight: 400;
+  font-size: 14px;
+  background: #ffffff;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 50%;
+  background-position: 90% 0%;
+}
+
+.service__product td {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.service__item--yes {
+  background-image: url("../../img/yes.jpg");
+  width: 40%;
+}
+
+.service__item--no {
+  background-image: url("../../img/no.jpg");
+  width: 40%;
+}
+
+.service__subitem {
   text-transform: uppercase;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .service__list {
+    width: 620px;
+  }
+
+  .service__title {
+    width: 152px;
+    height: 75px;
+  }
+
+  .service__product td {
+    height: 45px;
+  }
+
+  .service__subitem {
+    display: none;
+  }
+
+  .service__wrapper {
+    width: 660px;
+  }
+
+  .service__item {
+    width: 152px;
+    height: 80%;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service__list {
+    width: 940px;
+  }
+
+  .service__title {
+    width: 233px;
+    height: 94px;
+  }
+
+  .service__product td {
+    height: 59px;
+  }
+
+  .service__wrapper {
+    width: 1200px;
+  }
+
+  .service__item {
+    width: 233px;
+    font-size: 18px;
+  }
 }

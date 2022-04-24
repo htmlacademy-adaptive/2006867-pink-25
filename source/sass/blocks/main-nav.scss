@@ -2,6 +2,11 @@
   padding: 0;
   width: 100%;
   margin: 0 auto;
+  display: none;
+}
+
+.main-nav--nojs {
+  display: block;
 }
 
 @media (min-width: $desktop-width) {
@@ -11,8 +16,6 @@
   }
 
   .main-nav__wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
+    width: 700px;
   }
 }

@@ -1,18 +1,22 @@
 .social {
   box-sizing: border-box;
-  width: 100%;
-  padding-left: 130px;
-  padding-right: 130px;
   text-align: center;
   margin: 0 auto;
 }
 
 .social__list {
-  margin: 0;
   padding: 0;
+  width: 180px;
   list-style-type: none;
   display: flex;
+  margin: 38px auto 50px auto;
   justify-content: space-between;
+}
+
+.social__logo {
+  outline: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,8 +26,11 @@
   }
 
   .social__list {
-    display: flex;
-    width: 60%;
     margin: 0 auto;
+  }
+
+  .social__wrapper {
+    display: flex;
+    align-items: center;
   }
 }

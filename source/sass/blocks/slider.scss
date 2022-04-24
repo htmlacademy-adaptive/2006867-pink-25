@@ -1,0 +1,29 @@
+.slider__toggle {
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.slider__toggle--current {
+  background-color: #ffffff;
+  outline: 3px solid #283645;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles:nth-child(2) {
+    display: none;
+  }
+}
