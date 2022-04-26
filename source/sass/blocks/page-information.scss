@@ -3,7 +3,7 @@
   margin-top: -66px;
   background-repeat: no-repeat;
   background-size: 320px 237px;
-  min-height: 171px;
+  min-height: 237px;
   box-sizing: border-box;
   padding-top: 66px;
 }
@@ -15,6 +15,7 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+  margin-top: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +25,7 @@
     background-size: 660px 440px;
     min-height: 440px;
     margin-top: -110px;
-    padding-top: 150px;
+    padding-top: 110px;
   }
 
   .page-information__title {

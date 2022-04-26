@@ -1,6 +1,6 @@
 .service__wrapper {
   width: 320px;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-bottom: 45px;
 }
 
@@ -9,6 +9,7 @@
   margin: 0 auto;
   width: 1104px;
   background-color: #ffffff;
+  margin-left: -520px;
 }
 
 .service__empty {
@@ -70,15 +71,10 @@
   box-sizing: border-box;
 }
 
-.service__item--yes {
-  background-image: url("../../img/yes.jpg");
-  width: 40%;
+.service__hide-on-mobile {
+  display: none;
 }
 
-.service__item--no {
-  background-image: url("../../img/no.jpg");
-  width: 40%;
-}
 
 .service__subitem {
   text-transform: uppercase;
@@ -86,9 +82,14 @@
   padding-left: 20px;
 }
 
+.service__mark {
+
+}
+
 @media (min-width: $tablet-width) {
   .service__list {
     width: 620px;
+    margin-left: 20px;
   }
 
   .service__title {
@@ -97,6 +98,7 @@
   }
 
   .service__product td {
+    width: 152px;
     height: 45px;
   }
 
@@ -113,10 +115,17 @@
     height: 80%;
     background-position: 50% 50%;
   }
+
+  .service__hide-on-mobile {
+    display: table-cell;
+    width: 152px;
+    height: 45px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .service__list {
+    margin: 0 auto;
     width: 940px;
   }
 
@@ -126,6 +135,7 @@
   }
 
   .service__product td {
+    width: 233px;
     height: 59px;
   }
 
@@ -136,5 +146,10 @@
   .service__item {
     width: 233px;
     font-size: 18px;
+  }
+
+  .service__hide-on-mobile {
+    width: 233px;
+    height: 59px;
   }
 }
