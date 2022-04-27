@@ -9,13 +9,11 @@ headerToggle.classList.remove('header__toggle--no-js');
 headerList.classList.remove('main-nav--nojs');
 
 
+
 headerToggle.addEventListener('click', function () {
   headerToggle.classList.toggle('header__toggle--open-menu');
   headerToggle.classList.toggle('header__toggle--closed-menu');
   headerList.classList.toggle('main-nav--nojs');
+  mainHeader.classList.toggle('main-header--open-menu');
 });
 
-window.onload = function() {
-  let serviceTable = document.getElementsByClassName('.service__wrapper');
-  serviceTable[0].scrollTo(0, 100);
-}

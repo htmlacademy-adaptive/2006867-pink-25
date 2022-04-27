@@ -13,7 +13,7 @@
 .main-container__wrapper {
   margin-top: -66px;
   box-sizing: border-box;
-  background-image: url("../../img/phone-hand.png"), url("../../img/back-mobile.jpg");
+  background-image: url("../img/phone-hand.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 286px, 320px 462px;
   background-position: 90% 40%, 0 0;
@@ -26,7 +26,7 @@
 @media (min-width: $tablet-width) {
   .main-container__wrapper {
     margin-top: -110px;
-    background-image: url("../../img/phone_hand_tablet.png"), url("../../img/back-mobile.jpg");
+    background-image: url("../img/phone_hand_tablet.png"), url("../img/back-mobile.jpg");
     background-size: 660px 545px, 660px 729px;
     background-position: -20% 99%, 0 0;
     justify-content: center;
@@ -43,7 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .main-container__wrapper {
-    background-image: url("../../img/phone-hand-desktop.png"), url("../../img/back-desktop.png");
+    background-image: url("../img/phone-hand-desktop.png"), url("../img/back-desktop.png");
     background-size: 600px 600px, 1200px 853px;
     background-position: 90% 100%, 0 0;
     padding-left: 130px;

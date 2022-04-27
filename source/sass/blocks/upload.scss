@@ -6,7 +6,6 @@
 
 .upload__wrapper {
   background-color: #f2f2f2;
-  height: 757px;
   box-sizing: border-box;
   padding: 20px 20px 41px 20px;
 }
@@ -49,7 +48,6 @@
 
   .upload__wrapper {
     display: flex;
-    height: 511px;
     padding: 57px 20px 54px 20px;
   }
 
@@ -61,7 +59,11 @@
 @media (min-width: $desktop-width) {
   .upload__button-wrapper {
     flex-direction: row;
-    margin: 50px auto;
-    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .upload__wrapper {
+    padding-bottom: 0;
   }
 }

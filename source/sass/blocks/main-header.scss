@@ -1,10 +1,15 @@
 .main-header {
-  min-height: 66px;
+  height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header__no-js {
   min-height: 325px;
+}
+
+.main-header--open-menu {
+  background-color: #283645;
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {
