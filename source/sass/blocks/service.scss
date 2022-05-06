@@ -1,7 +1,8 @@
 .service__wrapper {
   width: 320px;
   overflow-x: hidden;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
+  margin-top: 50px;
 }
 
 .service__list {
@@ -9,7 +10,7 @@
   margin: 0 auto;
   width: 1104px;
   background-color: #ffffff;
-  margin-left: -520px;
+  margin-left: -530px;
 }
 
 .service__empty {
@@ -17,6 +18,8 @@
 }
 
 .service__title {
+  box-sizing: border-box;
+  padding-top: 0;
   text-align: center;
   font-size: 16px;
   line-height: 30px;
@@ -34,9 +37,25 @@
 }
 
 .service__title:nth-child(3) {
+  position: relative;
   background-color: #283645;
   border-right: 2px solid #f2f2f2;
   border-left: 2px solid #f2f2f2;
+  overflow: hidden;
+}
+
+.service__ribbon {
+  position: absolute;
+  background-color: $primary-color;
+  width: 120px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  left: -10%;
+  top: 20%;
+  transform: rotate(-45deg);
 }
 
 .service__price {
@@ -82,6 +101,25 @@
   padding-left: 20px;
 }
 
+.service__color-wrapper {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 34px;
+}
+
+.service__color-wrapper::before {
+  content: "";
+  background-color: #ffffff;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+}
+
 @media (min-width: $tablet-width) {
   .service__list {
     width: 620px;
@@ -104,18 +142,43 @@
 
   .service__wrapper {
     width: 660px;
+    margin-top: 76px;
   }
 
   .service__item {
     width: 152px;
     height: 80%;
     background-position: 50% 50%;
+    padding-left: 14px;
+    text-align: left;
   }
 
   .service__hide-on-mobile {
     display: table-cell;
     width: 152px;
     height: 45px;
+  }
+
+  .service__color-wrapper {
+    padding-top: 25px;
+  }
+
+  .service__color-wrapper::before {
+    height: 40px;
+  }
+
+  .service__ribbon {
+    left: -10%;
+    top: 13%;
+    width: 65px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service__mark {
+    padding-left: 55px;
   }
 }
 
@@ -130,6 +193,14 @@
     height: 94px;
   }
 
+  .service__name {
+    font-size: 18px;
+  }
+
+  .service__price {
+    font-size: 24px;
+  }
+
   .service__product td {
     width: 233px;
     height: 59px;
@@ -142,10 +213,34 @@
   .service__item {
     width: 233px;
     font-size: 18px;
+    padding-top: 10px;
   }
 
   .service__hide-on-mobile {
     width: 233px;
     height: 59px;
+  }
+
+  .service__color-wrapper {
+    padding-top: 73px;
+    padding-bottom: 54px;
+  }
+
+  .service__color-wrapper::before {
+    height: 80px;
+  }
+
+  .service__mark {
+    padding-left: 100px;
+  }
+
+  .service__ribbon {
+    left: -8%;
+    top: 9%;
+    width: 85px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

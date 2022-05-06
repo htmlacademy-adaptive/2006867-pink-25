@@ -11,11 +11,17 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: end;
   }
 
   .main-nav__wrapper {
-    width: 700px;
+    width: 100%;
+  }
+
+  .main-nav__list {
+    width: 100%;
   }
 }
