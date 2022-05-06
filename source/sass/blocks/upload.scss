@@ -1,3 +1,12 @@
+.upload__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 44px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+
 .upload__image {
   margin: 0 auto;
   display: flex;
@@ -24,12 +33,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $primary-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .upload__post--cancel {
   color: #283645;
   opacity: 0.1;
   border: 3px solid #283645;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .upload__button-wrapper {
@@ -37,7 +65,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 122px;
-  margin-top: 38px;
+  margin-top: 86px;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,12 +75,26 @@
   }
 
   .upload__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 57px 20px 54px 20px;
   }
 
   .upload__button-wrapper {
-    margin-top: 67px;
+    margin-top: 60px;
+    margin-left: 14px;
+    height: 134px;
+  }
+
+  .upload__subtitle {
+    font-size: 18px;
+    margin-top: 64px;
+    margin-bottom: 70px;
+  }
+
+  .upload__post {
+    width: 260px;
   }
 }
 
@@ -60,10 +102,32 @@
   .upload__button-wrapper {
     flex-direction: row;
     margin: 0 auto;
-    margin-top: 50px;
+    height: auto;
+    width: 410px;
+    margin-left: 86px;
   }
 
   .upload__wrapper {
-    padding-bottom: 0;
+    width: 940px;
+    padding: 57px 80px 57px 80px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+  }
+
+  .upload__subtitle {
+    margin-top: 54px;
+  }
+
+  .upload__post {
+    width: 183px;
+  }
+
+  .upload__post--cancel {
+    margin-left: 44px;
+  }
+
+  .upload__form {
+    margin-bottom: 42px;
   }
 }

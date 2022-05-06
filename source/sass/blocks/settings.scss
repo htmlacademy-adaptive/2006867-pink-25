@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-top: 43px;
+  margin-top: 38px;
 }
 
 .settings__range {
@@ -20,9 +20,44 @@
 }
 
 .settings__range--active {
+  margin-top: -6px;
   display: block;
   position: absolute;
-  left: 30%;
+}
+
+.settings__range-toggle {
+  width: 240px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.settings__range-toggle::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: #283645;
+}
+
+.settings__range-toggle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ffffff;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin-top: -4px;
+
+  &:active {
+    background: $primary-color;
+  }
+}
+
+.settings__button {
+  border: none;
+}
+
+.settings__item:not(:first-child) .settings__icon:hover g {
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +67,7 @@
 
   .settings__range {
     display: block;
+    width: 202px;
   }
 
   .settings__range--active {
@@ -42,12 +78,91 @@
   .settings__list {
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 0;
+    width: 253px;
     height: 200px;
+    padding-top: 7px;
   }
 
   .settings__item {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  .settings__item:nth-child(2) .settings__range {
+    margin-top: -8px;
+  }
+
+  .settings__item:nth-child(3) .settings__range {
+    margin-top: -12px;
+  }
+
+  .settings__item:nth-child(3) .settings__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .settings__range-toggle {
+    width: 202px;
+  }
+
+  .settings__icon {
+    width: 22px;
+    height: 22px;
+
+    & path {
+      fill: $primary-color;
+    }
+
+    & g {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .settings__list {
+    width: 380px;
+    margin-left: 82px;
+    padding-top: 0;
+  }
+
+  .settings__item {
+    justify-content: space-between;
+  }
+
+  .settings__range {
+    width: 288px;
+    padding-top: 8px;
+  }
+
+  .settings__range-toggle {
+    width: 288px;
+  }
+
+  .settings__item:nth-child(1) .settings__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .settings__item:nth-child(2) .settings__icon {
+    width: 48px;
+    height: 43px;
+    margin-left: 4px;
+    margin-top: -2px;
+  }
+
+  .settings__item:nth-child(3) .settings__icon {
+    margin-top: -2px;
+    margin-left: 4px;
+    width: 32px;
+    height: 32px;
   }
 }

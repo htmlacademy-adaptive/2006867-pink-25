@@ -4,25 +4,49 @@
   margin: 0 auto;
 }
 
+.social__image {
+  text-align: center;
+}
+
+.social__image:hover .social__icon-text path {
+  fill: $primary-color;
+}
+
+.social__image:active {
+  opacity: 0.3;
+}
+
 .social__list {
   padding: 0;
   width: 180px;
   list-style-type: none;
   display: flex;
-  margin: 38px auto 50px auto;
+  margin: 32px auto 32px auto;
   justify-content: space-between;
 }
 
 .social__logo {
   outline: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
+}
+
+.social__item:hover .social__logo {
+  outline: 3px solid #283645;
+}
+
+.social__item:active .social__logo {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .social__image {
+    text-align: left;
   }
 
   .social__list {
