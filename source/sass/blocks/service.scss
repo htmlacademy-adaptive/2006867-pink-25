@@ -2,7 +2,7 @@
   width: 320px;
   overflow-x: hidden;
   margin-bottom: 48px;
-  margin-top: 50px;
+  margin-top: 42px;
 }
 
 .service__list {
@@ -27,7 +27,7 @@
   color: #ffffff;
   background-color: #283645;
   width: 276px;
-  height: 94px;
+  height: 98px;
   border: none;
   text-transform: uppercase;
 }
@@ -90,9 +90,9 @@
   box-sizing: border-box;
 }
 
-.service__hide-on-mobile {
-  display: none;
-}
+// .service__hide-on-mobile {
+//   display: none;
+// }
 
 
 .service__subitem {
@@ -106,7 +106,7 @@
   background-color: #f2f2f2;
   position: relative;
   padding-top: 60px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
 }
 
 .service__color-wrapper::before {
@@ -128,12 +128,12 @@
 
   .service__title {
     width: 152px;
-    height: 75px;
+    height: 78px;
   }
 
   .service__product td {
     width: 152px;
-    height: 45px;
+    height: 47px;
   }
 
   .service__subitem {
@@ -142,7 +142,8 @@
 
   .service__wrapper {
     width: 660px;
-    margin-top: 76px;
+    margin-top: 72px;
+    margin-bottom: 40px;
   }
 
   .service__item {
@@ -180,6 +181,10 @@
   .service__mark {
     padding-left: 55px;
   }
+
+  .service .slider__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -208,6 +213,7 @@
 
   .service__wrapper {
     width: 1200px;
+    margin-top: 80px;
   }
 
   .service__item {
@@ -223,7 +229,7 @@
 
   .service__color-wrapper {
     padding-top: 73px;
-    padding-bottom: 54px;
+    padding-bottom: 58px;
   }
 
   .service__color-wrapper::before {

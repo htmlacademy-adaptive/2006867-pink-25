@@ -1,5 +1,5 @@
 .page-information {
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/back_mobile.jpg");
   margin-top: -66px;
   background-repeat: no-repeat;
   background-size: 320px 237px;
@@ -58,10 +58,14 @@
   .page-information__title {
     margin: 0 auto;
     margin-top: 62px;
-    width: 747px;
+    width: 357px;
 
     & br {
       display: none;
     }
+  }
+
+  .page-information__title--form {
+    width: 747px;
   }
 }

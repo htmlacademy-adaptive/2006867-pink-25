@@ -76,6 +76,10 @@
 
   .advantages__block-wrapper {
     margin-left: 72px;
+
+    & .advantages__description br:nth-child(2) {
+      display: none;
+    }
   }
 
   .advantages__title {
@@ -234,21 +238,26 @@
 
   .advantages__block {
     background-color: #f2f2f2;
-    padding-top: 38px;
+    padding-top: 30px;
     padding-left: 130px;
     padding-right: 130px;
+    padding-bottom: 58px;
     margin-top: 0;
   }
 
   .advantages__block-wrapper .advantages__description {
     text-align: left;
-    width: 522px;
+    width: 528px;
     margin-top: 30px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 
     & br {
       display: none;
     }
+  }
+
+  .advantages__block-wrapper .advantages__description br:nth-child(2) {
+    display: block;
   }
 
   .advantages__block-title br {
@@ -256,6 +265,6 @@
   }
 
   .advantages__block-wrapper {
-    padding-top: 40px;
+    padding-top: 52px;
   }
 }
