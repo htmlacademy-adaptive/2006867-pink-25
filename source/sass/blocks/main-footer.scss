@@ -1,7 +1,9 @@
 .main-footer__copyright {
+  width: 130px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .main-footer__link {
@@ -12,7 +14,7 @@
 .main-footer {
   width: 320px;
   box-sizing: border-box;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 51px;
   height: 284px;
 }
@@ -36,7 +38,8 @@
   }
 
   .main-footer__copyright {
-    text-align: right;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -51,7 +54,7 @@
   }
 
   .main-footer__copyright {
-    justify-content: end;
+    width: 152px;
   }
 
   .main-footer__text {

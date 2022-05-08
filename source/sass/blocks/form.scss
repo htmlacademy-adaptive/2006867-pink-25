@@ -171,7 +171,7 @@ h3.form__info {
 }
 
 .form__wrapper:nth-child(7) {
-  padding-bottom: 16px;
+  padding-bottom: 5px;
   padding-top: 0;
 }
 
@@ -205,7 +205,7 @@ h3.form__info {
 }
 
 .form__input[type="checkbox"]:checked + label::before {
-  background-image: url("../../img/tick.png");
+  background-image: url("../img/tick.png");
 }
 
 .form__input[type="radio"] + label {
@@ -304,6 +304,10 @@ h3.form__info {
 
   .form__input[type="radio"]:checked + label::before {
     margin-right: 18px;
+  }
+
+  .form__input[type="checkbox"] + label::before {
+    margin-right: 1em;
   }
 
 
@@ -569,6 +573,10 @@ h3.form__info {
     padding-left: 0;
   }
 
+  .form__wrapper:nth-child(2) .form__name {
+    margin-left: 18px;
+  }
+
   .form__name-wrapper {
     width: 450px;
   }
@@ -639,6 +647,7 @@ h3.form__info {
       display: grid;
       grid-auto-flow: column;
       grid-template-rows: 1fr 1fr;
+      column-gap: 16px;
     }
   }
 

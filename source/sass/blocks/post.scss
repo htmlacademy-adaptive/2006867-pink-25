@@ -72,15 +72,17 @@
 
 @media (min-width: $tablet-width) {
   .post__mark {
-    top: 8%;
+    top: 9%;
     left: 76%;
   }
 
   .post__wrapper-color {
-    padding: 20px 38px 20px 30px;
+    padding: 20px 30px 26px 30px;
     position: relative;
     width: 300px;
     min-height: 155px;
+    display: flex;
+    flex-direction: column;
   }
 
   .post__description {
@@ -99,6 +101,7 @@
   .post__wrapper-color--special {
     width: 620px;
     min-height: 121px;
+    padding-bottom: 20px;
   }
 
   .post__add-favorite {
@@ -106,6 +109,7 @@
     justify-content: space-between;
     font-size: 12px;
     line-height: 9px;
+    margin-top: auto;
   }
 
   .post__favorite-wrapper {
@@ -140,12 +144,13 @@
 
   .post__wrapper-color {
     padding-left: 26px;
-    padding-bottom: 18px;
+    padding-bottom: 30px;
   }
 
   .post__wrapper-color--special {
     width: 940px;
     min-height: 96px;
+    padding-bottom: 18px;
   }
 
   .post__add-favorite--special {
