@@ -213,7 +213,7 @@ h3.form__info {
   border-color: $primary-color;
 }
 
-.form__input[type="checkbox"] + label:focus::before {
+.form__input[type="checkbox"]:focus + label::before {
   border-color: #283645;
 }
 
@@ -249,7 +249,7 @@ h3.form__info {
   border-color: $primary-color;
 }
 
-.form__input[type="radio"] + label:focus::before {
+.form__input[type="radio"]:focus + label::before {
   border-color: #283645;
 }
 
