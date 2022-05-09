@@ -46,9 +46,8 @@
 }
 
 .upload__post--cancel {
-  color: #283645;
-  opacity: 0.1;
-  border: 3px solid #283645;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
 
   &:hover {
     opacity: 0.3;
@@ -57,6 +56,10 @@
   &:active {
     background-color: rgba(40, 54, 69, 0.3);
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    border: 3px solid rgba(40, 54, 69, 1);
   }
 }
 

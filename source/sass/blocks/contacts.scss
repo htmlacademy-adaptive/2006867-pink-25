@@ -70,6 +70,14 @@
   width: 320px;
 }
 
+.contacts__item:nth-child(1) {
+  margin-bottom: -5px;
+}
+
+.contacts__item:nth-child(2) {
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 44px;
@@ -115,6 +123,14 @@
 
   .contacts__map::before {
     height: 68px;
+  }
+
+  .contacts__item:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .contacts__item:nth-child(2) {
+    margin-bottom: 0;
   }
 }
 

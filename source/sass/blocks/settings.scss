@@ -27,6 +27,7 @@
 }
 
 .settings__range-toggle {
+  background: none;
   width: 240px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -34,6 +35,11 @@
 }
 
 .settings__range-toggle::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: #283645;
+}
+
+.settings__range-toggle::-moz-range-track {
   height: 2px;
   background-color: #283645;
 }
@@ -53,8 +59,24 @@
   }
 }
 
+.settings__range-toggle::-moz-range-thumb {
+  -webkit-appearance: none;
+  background: #ffffff;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin-top: -4px;
+
+  &:active {
+    background: $primary-color;
+  }
+}
+
 .settings__button {
   border: none;
+  background: none;
 }
 
 .settings__item:not(:first-child) .settings__icon:hover g {

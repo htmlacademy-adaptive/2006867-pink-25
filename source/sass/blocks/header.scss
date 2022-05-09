@@ -67,15 +67,16 @@
   height: 2px;
   background-color: #ffffff;
   transform: rotate(90deg);
-
-  &:hover {
-    background-color: $primary-color;
-  }
-
-  &:active {
-    background-color: rgba(210, 40, 86, 0.3);
-  }
 }
+
+.header__toggle--open-menu:hover ::before {
+  background-color: $primary-color;
+}
+
+.header__toggle--open-menu:active ::before {
+  background-color: rgba(210, 40, 86, 0.3);
+}
+
 
 .header__toggle--no-js {
   display: none;

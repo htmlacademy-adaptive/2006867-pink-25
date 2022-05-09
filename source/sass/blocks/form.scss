@@ -55,6 +55,7 @@ h3.form__info {
   box-sizing: border-box;
   padding: 22px 20px 20px 20px;
   margin-bottom: 26px;
+  outline: none;
 }
 
 .form__name::placeholder {
@@ -204,6 +205,18 @@ h3.form__info {
   background-position: center center;
 }
 
+.form__input[type="checkbox"] + label:hover::before {
+  border-color: #283645;
+}
+
+.form__input[type="checkbox"] + label:active::before {
+  border-color: $primary-color;
+}
+
+.form__input[type="checkbox"] + label:focus::before {
+  border-color: #283645;
+}
+
 .form__input[type="checkbox"]:checked + label::before {
   background-image: url("../img/tick.png");
 }
@@ -226,14 +239,18 @@ h3.form__info {
   margin-right: 1.4em;
   background-repeat: no-repeat;
   background-position: center center;
+}
 
-  &:hover {
-    border-color: #283645;
-  }
+.form__input[type="radio"] + label:hover::before {
+  border-color: #283645;
+}
 
-  &:active {
-    border-color: $primary-color;
-  }
+.form__input[type="radio"] + label:active::before {
+  border-color: $primary-color;
+}
+
+.form__input[type="radio"] + label:focus::before {
+  border-color: #283645;
 }
 
 .form__input[type="radio"]:checked + label::after {
@@ -273,6 +290,13 @@ h3.form__info {
   border-color: $primary-color;
 }
 
+.form__name:focus {
+  border-color: #283645;
+}
+
+.form__name:focus::-webkit-input-placeholder {
+  border-color: transparent;
+}
 
 @media (min-width: $tablet-width) {
   .form__subtitle {
@@ -518,7 +542,7 @@ h3.form__info {
     width: 60px;
     height: 60px;
     top: 8%;
-    left: 81.5%;
+    left: 81%;
   }
 
   .form__contact-wrapper:last-child::after {
@@ -528,7 +552,7 @@ h3.form__info {
     width: 60px;
     height: 60px;
     top: 8%;
-    left: 81.5%;
+    left: 81%;
   }
 
   .form__wrapper:nth-child(4) .form__name {
@@ -599,11 +623,11 @@ h3.form__info {
     width: 60px;
     height: 60px;
     top: 8%;
-    left: 85%;
+    left: 83.25%;
   }
 
   .form__contact-wrapper:nth-child(3)::after {
-    left: 85%;
+    left: 83.25%;
   }
 
 
