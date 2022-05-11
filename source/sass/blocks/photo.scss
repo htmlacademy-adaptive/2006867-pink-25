@@ -51,8 +51,9 @@
 
 @media (min-width: $desktop-width) {
   .photo__list {
-    grid-template-columns: 300px  300px  300px;
-    grid-gap: 54px 20px;
+    grid-template-columns: 1fr  1fr 1fr;
+    grid-gap: 53px 20px;
+    margin: 0 auto;
   }
 
   .photo__item--special {

@@ -41,25 +41,41 @@
 
 .header__toggle--open-menu {
   position: relative;
-  width: 36px;
-  height: 2px;
   border: none;
-  background-color: #ffffff;
-  transform: rotate(45deg);
-  box-shadow: none;
   display: block;
+  background: transparent;
 }
 
 .header__toggle--open-menu::before {
   top: 0;
-  left: 0;
+  left: -20px;
   position: absolute;
   content: "";
   width: 36px;
   height: 2px;
   background-color: #ffffff;
-  transform: rotate(90deg);
+  transform: rotate(45deg);
 }
+
+.header__toggle--open-menu::after {
+  top: 0;
+  left: -20px;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: rotate(135deg);
+}
+
+.header__toggle--open-menu:hover::before {
+  background-color: $primary-color;
+}
+
+.header__toggle--open-menu:hover::after {
+  background-color: $primary-color;
+}
+
 
 .header__toggle--no-js {
   display: none;

@@ -188,4 +188,8 @@
     width: 32px;
     height: 32px;
   }
+
+  .settings__item:nth-child(3) .settings__range {
+    margin-top: -10px;
+  }
 }

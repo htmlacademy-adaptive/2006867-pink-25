@@ -49,11 +49,13 @@ h3.form__info {
 
 .form__name {
   font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   width: 279px;
   box-sizing: border-box;
-  padding: 22px 20px 20px 20px;
+  padding: 16px 20px 16px 20px;
   margin-bottom: 26px;
   outline: none;
 }
@@ -325,15 +327,6 @@ h3.form__info {
       padding-left: 0;
     }
   }
-
-  .form__input[type="radio"]:checked + label::before {
-    margin-right: 18px;
-  }
-
-  .form__input[type="checkbox"] + label::before {
-    margin-right: 1em;
-  }
-
 
   .form__name-wrapper:last-child {
     margin-bottom: 68px;
@@ -623,11 +616,13 @@ h3.form__info {
     width: 60px;
     height: 60px;
     top: 8%;
-    left: 83.25%;
+    right: 2px;
+    left: initial;
   }
 
   .form__contact-wrapper:nth-child(3)::after {
-    left: 83.25%;
+    right: 2px;
+    left: initial;
   }
 
 

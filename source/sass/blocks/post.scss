@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.post:nth-child(1) .post__lynk {
+  display: block;
+}
+
 .post__mark {
   background-color: $primary-color;
   position: absolute;

@@ -48,10 +48,11 @@
   box-sizing: border-box;
   padding: 39px 20px 20px 20px;
   position: relative;
+  margin: 0 auto;
   margin-top: -104px;
   z-index: 3;
   background-color: #ffffff;
-  width: 320px;
+  width: 100%;
 }
 
 .reviews__button {
@@ -80,7 +81,7 @@
   }
 
   .reviews__wrapper {
-    width: 660px;
+    width: 100%;
     margin-top: 0;
     padding-top: 26px;
     padding-bottom: 0;
