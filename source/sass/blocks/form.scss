@@ -49,13 +49,12 @@ h3.form__info {
 
 .form__name {
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
   font-weight: 400;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   width: 279px;
   box-sizing: border-box;
-  padding: 16px 20px 16px 20px;
+  padding: 22px 20px 20px 20px;
   margin-bottom: 26px;
   outline: none;
 }
@@ -90,7 +89,7 @@ h3.form__info {
   border: 2px solid #2aab6d;
   border-radius: 2px;
   padding: 23px 20px 23px 20px;
-  margin-top: 26px;
+  margin-top: 18px;
   text-transform: uppercase;
 
   &:hover {
@@ -170,11 +169,10 @@ h3.form__info {
 
 .form__wrapper:nth-child(6) .form__name::placeholder {
   width: 231px;
-  text-overflow: ellipsis;
 }
 
 .form__wrapper:nth-child(7) {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   padding-top: 0;
 }
 
@@ -474,7 +472,7 @@ h3.form__info {
     order: 5;
     box-sizing: border-box;
     padding-top: 47px;
-    padding-bottom: 53px;
+    padding-bottom: 43px;
     position: relative;
     margin-bottom: 66px;
     border: 2px solid #e5e5e5;
@@ -499,7 +497,7 @@ h3.form__info {
     margin-top: 0;
     margin-bottom: 0;
     width: 496px;
-    height: 189px;
+    height: 188px;
     padding-top: 0;
     position: relative;
   }
@@ -533,9 +531,10 @@ h3.form__info {
     position: absolute;
     background-image: url("../../img/phoneicon.jpg");
     width: 60px;
-    height: 60px;
+    height: 57px;
     top: 8%;
-    left: 81%;
+    right: 42px;
+    left: initial;
   }
 
   .form__contact-wrapper:last-child::after {
@@ -543,9 +542,10 @@ h3.form__info {
     position: absolute;
     background-image: url("../../img/mailicon.jpg");
     width: 60px;
-    height: 60px;
+    height: 57px;
     top: 8%;
-    left: 81%;
+    right: 42px;
+    left: initial;
   }
 
   .form__wrapper:nth-child(4) .form__name {
@@ -678,7 +678,7 @@ h3.form__info {
     grid-column: 1 / 3;
     width: 936px;
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 34px;
     min-height: auto;
   }
 
@@ -694,9 +694,8 @@ h3.form__info {
 
   .form__wrapper:nth-child(7) {
     width: 939px;
-    margin-left: 2px;
     padding-right: 0;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
   }
 
   .form__additional-info-desktop {
