@@ -4,10 +4,10 @@
   margin: 0 auto;
 }
 
-.social__block {
-  width: 100%;
-  margin: 0 auto;
-}
+// .social__block {
+//   width: 100%;
+//   margin: 0 auto;
+// }
 
 .social__image {
   text-align: center;
@@ -47,6 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    width: 660px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
