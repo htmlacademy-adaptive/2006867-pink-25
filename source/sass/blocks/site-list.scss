@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   a {
     width: 100%;
@@ -38,7 +39,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 620px;
+    width: 100%;
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -47,6 +49,7 @@
 
   .site-list__item {
     position: relative;
+    width: auto;
   }
 
   .site-list__item a {

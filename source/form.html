@@ -10,7 +10,8 @@
         <link rel="preload" href="fonts/opensans.woff2" as="font">
     </head>
     <body class="page__form-body">
-        <header class="main-header main-header__no-js">
+        <header class="main-header">
+          <div class="main-header__wrapper main-header__wrapper--no-js">
           <div class="header">
             <a class="header__logo" href="index.html" aria-label="Pink logo.">
               <svg class="header__pink-logo header__pink-logo--visible-phone" width="74" height="23" viewBox="0 0 74 23"
@@ -67,8 +68,8 @@
               <button class="header__toggle header__toggle--closed-menu" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
-            </div>
-            <nav class="main-nav main-nav--nojs">
+          </div>
+          <nav class="main-nav main-nav--nojs">
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                   <li class="site-list__item ">
@@ -93,9 +94,9 @@
                   </li>
                 </ul>
               </div>
-            </nav>
-          </header>
-          <main class="main-content">
+          </nav>
+        </header>
+        <main class="main-content">
               <section class="page-information">
                 <h1 class="page-information__title page-information__title--form">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</h1>
               </section>
@@ -184,8 +185,8 @@
                     <span class="form__additional-info-desktop">* — обязательные для заполнения поля</span>
                   </div>
               </form>
-          </main>
-          <footer class="main-footer">
+        </main>
+        <footer class="main-footer">
             <section class="social">
               <h2 class="visually-hidden">Мы в социальных сетях</h2>
               <a class="social__image" href="index.html" aria-label="Pink logo.">
@@ -243,9 +244,9 @@
                 </a>
               </div>
             </section>
-          </footer>
+        </footer>
           <!-- При неверно заполенных удаляется класс modal__closed -->
-          <div class="modal modal__closed">
+        <div class="modal modal__closed">
             <div class="modal__container">
               <div class="modal__wrapper">
                 <h3 class="modal__wrapper-title">Что-то пошло не так!</h3>
@@ -255,9 +256,9 @@
                 </div>
               </div>
               </div>
-            </div>
+        </div>
             <!-- При отправке верной формы удаляется класс modal__closed -->
-          <div class="modal modal__closed">
+        <div class="modal modal__closed">
             <div class="modal__container">
               <div class="modal__wrapper">
                 <h3 class="modal__wrapper-title">Ваша заявка отправлена</h3>
@@ -267,7 +268,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <script src="js/script.js"></script>
+        </div>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -10,8 +10,9 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body class="page__catalog-body">
-    <header class="main-header main-header__no-js">
-      <div class="header">
+    <header class="main-header">
+      <div class="main-header__wrapper main-header__wrapper--no-js">
+        <div class="header">
         <a class="header__logo" href="index.html"  aria-label="Pink logo.">
           <svg class="header__pink-logo header__pink-logo--visible-phone" width="74" height="23" viewBox="0 0 74 23"
           xmlns="http://www.w3.org/2000/svg">
@@ -67,8 +68,8 @@
         <button class="header__toggle header__toggle--closed-menu header__toggle--no-js" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <nav class="main-nav main-nav--nojs">
+        </div>
+        <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
@@ -93,7 +94,8 @@
             </li>
           </ul>
         </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="main-inner">
       <section class="page-information">
