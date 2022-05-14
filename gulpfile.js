@@ -23,6 +23,7 @@ export const styles = () => {
       autoprefixer(),
       cssnano()
     ]))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -81,6 +82,8 @@ const copyImages = () => {
 const script = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
+  .pipe(gulp.dest('build/js'))
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'))
   }
 
