@@ -23,7 +23,7 @@ export const styles = () => {
       autoprefixer(),
       cssnano()
     ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css'))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -55,12 +55,12 @@ const sprite = () => {
 
 //WebP
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
     webp: {}
     }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('source/img'))
 }
 
 // Images
@@ -94,6 +94,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/img/*.webp",
     "source/img/**/*.svg",
     "!source/img/icons/*.svg",
   ], {
@@ -149,8 +150,7 @@ export const build = gulp.series(
     styles,
     html,
     script,
-    sprite,
-    createWebp
+    sprite
   ),
 )
 
@@ -163,8 +163,7 @@ export default gulp.series(
     styles,
     html,
     script,
-    sprite,
-    createWebp
+    sprite
   ),
   gulp.series (
     server,

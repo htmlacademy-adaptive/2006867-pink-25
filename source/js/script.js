@@ -16,4 +16,3 @@ headerToggle.addEventListener('click', function () {
   headerList.classList.toggle('main-nav__no-js');
   mainHeader.classList.toggle('main-header__open-menu');
 });
-

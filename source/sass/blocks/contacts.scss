@@ -64,6 +64,13 @@
   clip-path: polygon(100% 0, 50% 100%, 0 0);
 }
 
+.contacts__map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
 .contacts iframe {
   border: none;
   display: block;
@@ -181,7 +188,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .contacts__title {

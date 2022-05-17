@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Конкурс</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
         <link rel="icon" href="favicon.ico">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
         <link rel="preload" href="fonts/opensans.woff2" as="font">
+        <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+        <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     </head>
     <body class="page__form-body">
         <header class="main-header">
@@ -95,10 +97,11 @@
                 </ul>
               </div>
           </nav>
+          </div>
         </header>
         <main class="main-content">
               <section class="page-information">
-                <h1 class="page-information__title page-information__title--form">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</h1>
+                <h1 class="page-information__title page-information__title--form">Конкурс на самое&ensp;<br>безбашенное&ensp;<br>путешествие с Пинк</h1>
               </section>
               <form class="form" action="https://echo.htmlacademy.ru/" method="get">
                 <h2 class="form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -110,7 +113,7 @@
                         <input class="form__name" type="text" id="user-surname" placeholder="Укажите фамилию *" name="surname" required>
                     </div>
                     <div class="form__name-wrapper">
-                        <label class="form__info" for="user-surname">Имя:</label>
+                        <label class="form__info" for="user-name">Имя:</label>
                         <input class="form__name" type="text" id="user-name" placeholder="Введите ваше имя *" name="name" required>
                     </div>
                     <div class="form__name-wrapper">

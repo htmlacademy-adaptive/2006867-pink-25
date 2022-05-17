@@ -3,10 +3,11 @@
   background-image: url("../img/back_mobile.jpg");
   margin-top: -66px;
   background-repeat: no-repeat;
-  background-size: 100% 237px;
+  // background-size: 100% 237px;
   min-height: 237px;
   box-sizing: border-box;
   padding-top: 66px;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back_mobile@2x.jpg");
@@ -27,7 +28,7 @@
   .page-information {
     background-image: url("../img/back_tablet.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 440px;
+    // background-size: 100% 440px;
     min-height: 440px;
     margin-top: -110px;
     padding-top: 110px;
@@ -48,7 +49,7 @@
   .page-information {
     background-image: url("../img/back-desktop-catalog.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 455px;
+    // background-size: 100% 455px;
     min-height: 395px;
 
     @media (min-resolution: 2dppx) {
@@ -60,13 +61,13 @@
     margin: 0 auto;
     margin-top: 62px;
     width: 357px;
+  }
+
+  .page-information__title--form {
+    width: 790px;
 
     & br {
       display: none;
     }
-  }
-
-  .page-information__title--form {
-    width: 747px;
   }
 }

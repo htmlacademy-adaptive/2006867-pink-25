@@ -124,7 +124,8 @@
 @media (min-width: $desktop-width) {
   .header {
     padding: 0;
-    width: 364px;
+    // width: 364px;
+    width: 320px;
   }
 
   .header__toggle {

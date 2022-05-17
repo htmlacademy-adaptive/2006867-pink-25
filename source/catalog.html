@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
   <body class="page__catalog-body">
     <header class="main-header">
@@ -99,7 +101,7 @@
     </header>
     <main class="main-inner">
       <section class="page-information">
-      <h1 class="page-information__title">Фотографии <br>пользователей</h1>
+      <h1 class="page-information__title">Фотографии<br>пользователей</h1>
       </section>
       <h2 class="main-inner__subtitle">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h2>
       <section class="photo">
@@ -109,6 +111,9 @@
             <li class="photo__item photo__item--special post">
                 <a class="post__lynk" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama_desktop.webp 1x, img/panorama_desktop@2x.webp 2x" width="100%" height="506">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama_tablet.webp 1x, img/panorama_tablet@2x.webp 2x" width="100%" height="509">
+                    <source type="image/webp" srcset="img/panorama_mobile.webp 1x, img/panorama_mobile@2x.webp 2x" width="100%" height="137">
                     <source media="(min-width: 1200px)" srcset="img/panorama_desktop.jpg 1x, img/panorama_desktop@2x.jpg 2x" width="100%" height="506">
                     <source media="(min-width: 660px)" srcset="img/panorama_tablet.jpg 1x, img/panorama_tablet@2x.jpg 2x" width="100%" height="509">
                     <img class="photo__image" src="img/panorama_mobile.jpg" srcset="img/panorama_mobile@2x.jpg 2x" width="100%" height="137" alt="Панорама дня.">
@@ -135,6 +140,9 @@
             <li class="photo__item post">
                 <a class="post__lynk" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x" width="300" height="400">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x" width="300" height="300">
+                    <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x" width="280" height="180">
                     <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x" width="300" height="400">
                     <source media="(min-width: 660px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x" width="300" height="300">
                     <img class="photo__image" src="img/photo1_mobile.jpg" srcset="img/photo1_mobile@2x.jpg 2x" width="280" height="180" alt="Автомобиль.">
@@ -160,6 +168,9 @@
             <li class="photo__item post">
               <a class="post__lynk" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo2_desktop.webp 1x, img/photo2_desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo2_tablet.webp 1x, img/photo2_tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/photo2_mobile.webp 1x, img/photo2_mobile@2x.webp 2x" width="280" height="180">
                   <source media="(min-width: 1200px)" srcset="img/photo2_desktop.jpg 1x, img/photo2_desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/photo2_tablet.jpg 1x, img/photo2_tablet@2x.jpg 2x" width="300" height="300">
                   <img class="photo__image" src="img/photo2_mobile.jpg" srcset="img/photo2_mobile@2x.jpg 2x" width="280" height="180" alt="Барабаны.">
@@ -185,6 +196,9 @@
             <li class="photo__item post">
                 <a class="post__lynk" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo3_desktop.webp 1x, img/photo3_desktop@2x.webp 2x" width="300" height="400">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo3_tablet.webp 1x, img/photo3_tablet@2x.webp 2x" width="300" height="300">
+                    <source type="image/webp" srcset="img/photo3_mobile.webp 1x, img/photo3_mobile@2x.webp 2x" width="280" height="180">
                     <source media="(min-width: 1200px)" srcset="img/photo3_desktop.jpg 1x, img/photo3_desktop@2x.jpg 2x" width="300" height="400">
                     <source media="(min-width: 660px)" srcset="img/photo3_tablet.jpg 1x, img/photo3_tablet@2x.jpg 2x" width="300" height="300">
                     <img class="photo__image" src="img/photo3_mobile.jpg" srcset="img/photo3_mobile@2x.jpg 2x" width="280" height="180" alt="Небо.">
@@ -210,6 +224,9 @@
             <li class="photo__item post">
                 <a class="post__lynk" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo4_desktop.webp 1x, img/photo4_desktop@2x.webp 2x" width="300" height="400">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo4_tablet.webp 1x, img/photo4_tablet@2x.webp 2x" width="300" height="300">
+                    <source type="image/webp" srcset="img/photo4_mobile.webp 1x, img/photo4_mobile@2x.webp 2x" width="280" height="180">
                     <source media="(min-width: 1200px)" srcset="img/photo4_desktop.jpg 1x, img/photo4_desktop@2x.jpg 2x" width="300" height="400">
                     <source media="(min-width: 660px)" srcset="img/photo4_tablet.jpg 1x, img/photo4_tablet@2x.jpg 2x" width="300" height="300">
                     <img class="photo__image" src="img/photo4_mobile.jpg" srcset="img/photo4_mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
@@ -235,6 +252,9 @@
             <li class="photo__item post">
                 <a class="post__lynk" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo5_desktop.webp 1x, img/photo5_desktop@2x.webp 2x" width="300" height="400">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo5_tablet.webp 1x, img/photo5_tablet@2x.webp 2x" width="300" height="300">
+                    <source type="image/webp" srcset="img/photo5_mobile.webp 1x, img/photo5_mobile@2x.webp 2x" width="280" height="180">
                     <source media="(min-width: 1200px)" srcset="img/photo5_desktop.jpg 1x, img/photo5_desktop@2x.jpg 2x" width="300" height="400">
                     <source media="(min-width: 660px)" srcset="img/photo5_tablet.jpg 1x, img/photo5_tablet@2x.jpg 2x" width="300" height="300">
                     <img class="photo__image" src="img/photo5_mobile.jpg" srcset="img/photo5_mobile@2x.jpg 2x" width="280" height="180" alt="Вид с вершины горы">
@@ -260,6 +280,9 @@
             <li class="photo__item post">
                 <a class="post__lynk" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo6_desktop.webp 1x, img/photo6_desktop@2x.webp 2x" width="300" height="400">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo6_tablet.webp 1x, img/photo6_tablet@2x.webp 2x" width="300" height="300">
+                    <source type="image/webp" srcset="img/photo6_mobile.webp 1x, img/photo6_mobile@2x.webp 2x" width="280" height="180">
                     <source media="(min-width: 1200px)" srcset="img/photo6_desktop.jpg 1x, img/photo6_desktop@2x.jpg 2x" width="300" height="400">
                     <source media="(min-width: 660px)" srcset="img/photo6_tablet.jpg 1x, img/photo6_tablet@2x.jpg 2x" width="300" height="300">
                     <img class="photo__image" src="img/photo6_mobile.jpg" srcset="img/photo6_mobile@2x.jpg 2x" width="280" height="180" alt="Вид из иллюминатора.">
@@ -290,6 +313,8 @@
           <h2 class="upload__subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
           <div class="upload__wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/upload_photo_tablet.webp 1x, img/upload_photo_tablet@2x.webp 2x" width="300" height="400">
+              <source type="image/webp" srcset="img/upload_photo_mobile.webp 1x, img/upload_photo_mobile@2x.webp 2x" width="280" height="374">
               <source media="(min-width: 660px)" srcset="img/upload_photo_tablet.jpg 1x, img/upload_photo_tablet@2x.jpg 2x" width="300" height="400">
               <img class="upload__image" src="img/upload_photo_mobile.jpg" srcset="img/upload_photo_mobile@2x.jpg 2x" width="280" height="374" alt="Зимний пейзаж.">
             </picture>
@@ -304,10 +329,9 @@
                   </button>
                   </div>
                 <div class="settings__range settings__range--active">
-                        <input class="settings__range-toggle" type="range">
-                          <span class="visually-hidden">Изменить значение.</span>
-                        </input>
-              </div>
+                    <label class="visually-hidden" for="crop">Обрезать</label>
+                    <input class="settings__range-toggle" type="range" id="crop"></input>
+                </div>
               </li>
               <li class="settings__item">
                 <div class="settings__button-wrapper">
@@ -321,28 +345,26 @@
                 </button>
                 </div>
                 <div class="settings__range">
-                        <input class="settings__range-toggle" type="range">
-                          <span class="visually-hidden">Изменить значение.</span>
-                        </input>
-              </div>
-              </li>
-              <li class="settings__item">
-                <div class="settings__button-wrapper">
-                <button type="button" class="settings__button" aria-label="Contrast icon.">
-                  <svg class="settings__icon" width="48" height="43" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.3">
-                    <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="#283645"/>
-                    <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="#283645"/>
-                    </g>
-                  </svg>
-                </button>
+                  <label class="visually-hidden" for="fill">Изменить насыщенность</label>
+                  <input class="settings__range-toggle" type="range" id="fill"></input>
                 </div>
-                <div class="settings__range">
-                        <input class="settings__range-toggle" type="range">
-                          <span class="visually-hidden">Изменить значение.</span>
-                        </input>
-              </div>
-              </li>
+                </li>
+                <li class="settings__item">
+                  <div class="settings__button-wrapper">
+                    <button type="button" class="settings__button" aria-label="Contrast icon.">
+                      <svg class="settings__icon" width="48" height="43" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3">
+                        <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="#283645"/>
+                        <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="#283645"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="settings__range">
+                    <label class="visually-hidden" for id="contrast">Изменить контрастность</label>
+                    <input class="settings__range-toggle" type="range" id="contast"></input>
+                  </div>
+                </li>
             </ul>
             <div class="upload__button-wrapper">
               <button class="upload__post" type="submit">Запостить</button>
