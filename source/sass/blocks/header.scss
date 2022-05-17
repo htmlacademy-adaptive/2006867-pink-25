@@ -21,6 +21,7 @@
 .header__toggle--closed-menu {
   display: block;
   z-index: 3;
+  margin-top: -15px;
   cursor: pointer;
   border: none;
   width: 50px;
@@ -106,6 +107,10 @@
   .header {
     min-height: 110px;
     width: 620px;
+  }
+
+  .header__logo {
+    margin-top: -15px;
   }
 
   .header__pink-logo--visible-phone {

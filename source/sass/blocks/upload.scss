@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.upload__form {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
 .upload__image {
   margin: 0 auto;
   display: flex;
@@ -82,7 +87,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 57px 20px 54px 20px;
-    width: 620px;
+    width: 660px;
     margin-left: auto;
     margin-right: auto;
   }

@@ -62,7 +62,18 @@
   }
 
 
-  .site-list__item--active {
-    border-bottom: 2px solid #ffffff;
+  // .site-list__item--active {
+  //   border-bottom: 2px solid #ffffff;
+  // }
+
+  .site-list__item--active::before {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    content: "";
   }
 }

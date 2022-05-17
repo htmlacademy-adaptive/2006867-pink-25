@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
   <body class="page__body">
-    <header class="main-header main-header__no-js">
+    <header class="main-header main-header--no-js">
       <div class="main-header__wrapper">
         <div class="header">
         <a class="header__logo" href="index.html"  aria-label="Pink logo.">
@@ -71,7 +71,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         </div>
-        <nav class="main-nav main-nav__no-js">
+        <nav class="main-nav main-nav--no-js">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -148,23 +148,34 @@
           <div class="advantages__list-wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
-                <img class="advantages__decor-image" src="img/screen1.png" srcset="img/screen1@2x.png 2x" width="186" height="382" alt="Серый экран">
+                <picture>
+                  <source type="image/webp" srcset="img/screen1.webp 1x, img/screen1@2x.webp 2x" width="186" height="382">
+                  <img class="advantages__decor-image" src="img/screen1.png" srcset="img/screen1@2x.png 2x" width="186" height="382" alt="Серый экран">
+                </picture>
                 <h3 class="advantages__subtitle">Поднимает настроение</h3>
                 <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__decor-image" src="img/screen2.png" srcset="img/screen2@2x.png 2x" width="186" height="382" alt="Розовый экран">
+                <picture>
+                  <source type="image/webp" srcset="img/screen2.webp 1x, img/screen2@2x.webp 2x" width="186" height="382">
+                  <img class="advantages__decor-image" src="img/screen2.png" srcset="img/screen2@2x.png 2x" width="186" height="382" alt="Розовый экран">
+                </picture>
                 <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
                 <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы&ensp;<br>усилить эффект</p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__decor-image" src="img/screen3.png" srcset="img/screen3@2x.png 2x"  width="186" height="382" alt="Привет на экране">
+                <picture>
+                  <source type="image/webp" srcset="img/screen3.webp 1x, img/screen3@2x.webp 2x" width="186" height="382">
+                  <img class="advantages__decor-image" src="img/screen3.png" srcset="img/screen3@2x.png 2x"  width="186" height="382" alt="Привет на экране">
+                </picture>
                 <h3 class="advantages__subtitle">Заводит&ensp;<br>новых друзей</h3>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
             <div class="advantages__decor-image-special">
               <picture>
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/screen_special.webp 1x, img/screen_special@2x.webp 2x" width="268" height="547">
+                <source type="image/webp" srcset="img/screen_special.webp 1x, img/screen_special@2x.webp 2x" width="157" height="320">
                 <source media="(min-width: 660px)" srcset="img/screen_special.png 1x, img/screen_special@2x.png 2x" width="268" height="547">
                 <img src="img/screen_special.png" srcset="img/screen_special@2x.png 2x" width="157" height="320" alt="Всем привет на экране Iphone">
               </picture>
@@ -362,12 +373,12 @@
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715887393!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650141218776!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="contacts__map-image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x" width="100%" height="502">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x" width="100%" height="374">
+            <source type="image/webp" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x" width="100%" height="200">
             <source media="(min-width: 1200px)" srcset="img/map_desktop.jpg 1x, img/map_desktop@2x.jpg 2x" width="100%" height="502">
             <source media="(min-width: 660px)" srcset="img/map_tablet.jpg 1x, img/map_tablet@2x.jpg 2x" width="100%" height="374">
-            <img class="photo__image" src="img/map_mobile.jpg" srcset="img/map_mobile@2x.jpg 2x" width="100%" height="200">
+            <img src="img/map_mobile.jpg" srcset="img/map_mobile@2x.jpg 2x" width="100%" height="200">
         </div>
       </div>
     </section>

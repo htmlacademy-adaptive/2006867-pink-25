@@ -95,10 +95,11 @@
 @media (min-width: $desktop-width) {
   .main-container__wrapper {
     background-image: url("../img/back_desktop.jpg");
-    background-size: 100% 853px;
+    background-size: 100vw 853px;
     padding-left: 130px;
     padding-right: 130px;
     min-height: 853px;
+    overflow: hidden;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back_desktop@2x.jpg");
@@ -107,11 +108,14 @@
 
   .main-container__container {
     padding-left: 0;
-    width: 1200px;
+    // width: 1200px;
+    width: 940px;
     background-image: url("../img/phone_hand_desktop.png");
     background-size: 1050px 645px;
     min-height: 853px;
     background-position: 14px bottom;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone_hand_desktop@2x.png");
