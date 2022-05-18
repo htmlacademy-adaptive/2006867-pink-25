@@ -115,7 +115,10 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'build',
+      serveStaticOptions: {
+        extensions: ["html"],
+      },
     },
     cors: true,
     notify: false,

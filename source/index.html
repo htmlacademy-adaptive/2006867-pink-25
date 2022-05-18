@@ -238,10 +238,10 @@
       </section>
       <section class="service">
         <h2 class="visually-hidden">Цены на наши услуги</h2>
-        <div class="service__color-wrapper">
-          <div class="service__wrapper slider">
+        <div class="service__color-wrapper slider">
+          <div class="service__wrapper">
             <table class="service__list slider__list">
-            <tr>
+              <tr>
               <th class="service__empty">
               </th>
               <th class="service__title">
@@ -257,8 +257,8 @@
                 <span class="service__name">Анлим</span>
                 <span class="service__price">9,99 USD</span>
               </th>
-            </tr>
-            <tr class="service__product">
+              </tr>
+              <tr class="service__product">
               <td class="service__hide-on-mobile">
                 <span class="service__item">Розовый фильтр</span>
               </td>
@@ -286,8 +286,8 @@
                   </svg>
                 </span>
               </td>
-            </tr>
-            <tr class="service__product">
+              </tr>
+              <tr class="service__product">
               <td class="service__hide-on-mobile">
                 <span class="service__item">Смайлики</span>
               </td>
@@ -315,8 +315,8 @@
                   </svg>
                 </span>
               </td>
-            </tr>
-            <tr class="service__product">
+              </tr>
+              <tr class="service__product">
               <td>
                 <span class="service__item">Комментарии</span>
               </td>
@@ -344,14 +344,14 @@
                   </svg>
                 </span>
               </td>
-            </tr>
-          </table>
+              </tr>
+            </table>
           </div>
-        <div class="services__toggles slider__toggles">
+          <div class="service__toggles slider__toggles">
           <button class="slider__toggle" type="button" aria-label="База"></button>
           <button class="slider__toggle slider__toggle--current" type="button" aria-label="Стандарт"></button>
           <button class="slider__toggle" type="button" aria-label="Анлим"></button>
-        </div>
+          </div>
         </div>
       </section>
       <section class="contacts">
@@ -373,12 +373,14 @@
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715887393!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650141218776!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="contacts__map-image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x" width="100%" height="502">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x" width="100%" height="374">
-            <source type="image/webp" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x" width="100%" height="200">
-            <source media="(min-width: 1200px)" srcset="img/map_desktop.jpg 1x, img/map_desktop@2x.jpg 2x" width="100%" height="502">
-            <source media="(min-width: 660px)" srcset="img/map_tablet.jpg 1x, img/map_tablet@2x.jpg 2x" width="100%" height="374">
-            <img src="img/map_mobile.jpg" srcset="img/map_mobile@2x.jpg 2x" width="100%" height="200">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x" width="100%" height="502">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x" width="100%" height="374">
+              <source type="image/webp" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x" width="100%" height="200">
+              <source media="(min-width: 1200px)" srcset="img/map_desktop.jpg 1x, img/map_desktop@2x.jpg 2x" width="100%" height="502">
+              <source media="(min-width: 660px)" srcset="img/map_tablet.jpg 1x, img/map_tablet@2x.jpg 2x" width="100%" height="374">
+              <img src="img/map_mobile.jpg" srcset="img/map_mobile@2x.jpg 2x" width="100%" height="200">
+            </picture>
         </div>
       </div>
     </section>
