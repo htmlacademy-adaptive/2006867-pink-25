@@ -533,7 +533,7 @@ h3.form__info {
   .form__contact-wrapper::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/phoneicon.jpg");
+    background-image: url("../img/phoneicon.jpg");
     width: 58px;
     height: 58px;
     top: 8%;
@@ -544,7 +544,7 @@ h3.form__info {
   .form__contact-wrapper:last-child::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/mailicon.jpg");
+    background-image: url("../img/mailicon.jpg");
     width: 58px;
     height: 58px;
     top: 8%;
