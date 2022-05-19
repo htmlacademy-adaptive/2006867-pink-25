@@ -5,7 +5,7 @@
   display: none;
 }
 
-.main-nav--nojs {
+.main-nav--no-js {
   display: block;
 }
 
@@ -14,7 +14,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
   }
 
   .main-nav__wrapper {

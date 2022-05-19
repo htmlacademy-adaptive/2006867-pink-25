@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.post:nth-child(1) .post__lynk {
+  display: block;
+}
+
 .post__mark {
   background-color: $primary-color;
   position: absolute;
@@ -67,6 +71,7 @@
   font-size: 12px;
   font-weight: 400;
   color: $primary-color;
+  text-decoration: none;
 }
 
 

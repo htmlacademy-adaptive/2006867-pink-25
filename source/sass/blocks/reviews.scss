@@ -2,7 +2,7 @@
 .reviews__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .reviews__item {
@@ -46,12 +46,13 @@
 
 .reviews__wrapper {
   box-sizing: border-box;
-  padding: 45px 20px 20px 20px;
+  padding: 39px 20px 20px 20px;
   position: relative;
+  margin: 0 auto;
   margin-top: -104px;
   z-index: 3;
   background-color: #ffffff;
-  width: 320px;
+  width: 100%;
 }
 
 .reviews__button {
@@ -80,7 +81,7 @@
   }
 
   .reviews__wrapper {
-    width: 660px;
+    width: 100%;
     margin-top: 0;
     padding-top: 26px;
     padding-bottom: 0;
@@ -141,6 +142,8 @@
     width: 940px;
     margin-top: 72px;
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .reviews__author-name {

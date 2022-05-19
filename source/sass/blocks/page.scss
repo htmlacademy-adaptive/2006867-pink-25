@@ -1,43 +1,40 @@
 .page__body {
-  width: 320px;
+  // width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .page__catalog-body {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .page__form-body {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .page__body {
-    width: 660px;
-  }
-
   .page__catalog-body {
-    width: 660px;
-    background-size: 660px 440px;
+    width: 100%;
+    // background-size: 660px 440px;
   }
 
   .page__form-body {
-    width: 660px;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__body {
-    width: 1200px;
+    width: 100%;
   }
 
   .page__catalog-body {
-    width: 1200px;
+    width: 100%;
   }
 
   .page__form-body {
-    width: 1200px;
+    width: 100%;
   }
 }

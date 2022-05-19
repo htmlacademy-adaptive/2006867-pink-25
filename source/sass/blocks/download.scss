@@ -46,9 +46,10 @@
 }
 
 .download__info {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
   display: flex;
   justify-content: center;
-  font-weight: 300;
   line-height: 24px;
   color: #ffffff;
   margin-top: 12px;
@@ -67,17 +68,24 @@
     padding: 0;
   }
 
+  .download__list {
+    margin-left: 47px;
+  }
+
   .download__info {
     font-size: 18px;
-    margin-top: 28px;
+    margin: 0;
+    justify-content: left;
   }
 
   .download__application {
     width: 300px;
+    margin: 0;
+    margin-bottom: 46px;
   }
 
   .download__wrapper {
-    margin-top: 46px;
+    margin-bottom: 20px;
   }
 }
 
@@ -88,16 +96,11 @@
   }
 
   .download__application {
-    margin-top: 38px;
     font-size: 21px;
+    margin-bottom: 70px;
   }
 
   .download__wrapper {
-    margin-top: 64px;
-  }
-
-  .download__info {
-    font-size: 18px;
-    margin-top: 48px;
+    margin-bottom: 46px;
   }
 }

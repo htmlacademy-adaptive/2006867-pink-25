@@ -1,11 +1,12 @@
 .header {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
   align-items: center;
   min-height: 66px;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 280px;
 }
 
 .header__open-menu {
@@ -20,6 +21,7 @@
 .header__toggle--closed-menu {
   display: block;
   z-index: 3;
+  margin-top: -15px;
   cursor: pointer;
   border: none;
   width: 50px;
@@ -41,41 +43,41 @@
 
 .header__toggle--open-menu {
   position: relative;
-  width: 36px;
-  height: 2px;
   border: none;
-  background-color: #ffffff;
-  transform: rotate(45deg);
-  box-shadow: none;
   display: block;
-
-  &:hover {
-    background-color: $primary-color;
-  }
-
-  &:active {
-    background-color: rgba(210, 40, 86, 0.3);
-  }
+  background: transparent;
 }
 
 .header__toggle--open-menu::before {
   top: 0;
-  left: 0;
+  left: -20px;
   position: absolute;
   content: "";
   width: 36px;
   height: 2px;
   background-color: #ffffff;
-  transform: rotate(90deg);
-
-  &:hover {
-    background-color: $primary-color;
-  }
-
-  &:active {
-    background-color: rgba(210, 40, 86, 0.3);
-  }
+  transform: rotate(45deg);
 }
+
+.header__toggle--open-menu::after {
+  top: 0;
+  left: -20px;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: rotate(135deg);
+}
+
+.header__toggle--open-menu:hover::before {
+  background-color: $primary-color;
+}
+
+.header__toggle--open-menu:hover::after {
+  background-color: $primary-color;
+}
+
 
 .header__toggle--no-js {
   display: none;
@@ -104,6 +106,11 @@
 @media (min-width: $tablet-width) {
   .header {
     min-height: 110px;
+    width: 620px;
+  }
+
+  .header__logo {
+    margin-top: -15px;
   }
 
   .header__pink-logo--visible-phone {
@@ -122,6 +129,7 @@
 @media (min-width: $desktop-width) {
   .header {
     padding: 0;
+    // width: 364px;
     width: 320px;
   }
 
